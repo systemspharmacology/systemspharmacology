@@ -1,0 +1,23 @@
+<section id="news"><!--main-section-start-->
+  <div class="container">
+    <h2>News and Release</h2>
+    <div class="work_section">
+      <div class="row">
+        <div class="col-lg-6 col-sm-6 wow fadeInLeft delay-05s">
+          {% for news in site.news %}
+          <div class="service-list">
+            <div class="service-list-col1"> <i class="icon-{{news.icon}}"></i> </div>
+            <div class="service-list-col2">
+              <h3><a href="{{news.url}}">{{news.title}}</a></h3>
+              <p>{{news.description}}</p>
+            </div>
+          </div>
+          {% endfor %}
+          
+          <div class="work_bottom"> <span>Ready to take the plunge?</span> <a href="#contact" class="contact_btn">Download</a> </div>
+        </div>
+        <figure class="col-lg-6 col-sm-6  text-right wow fadeInUp delay-02s"> </figure>
+      </div>
+    </div>
+  </div>
+</section>
