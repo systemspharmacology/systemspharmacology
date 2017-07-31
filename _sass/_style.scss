@@ -140,7 +140,43 @@ p{
 .res-nav_click{ display:none;}
 
 
-/* Nav Styles
+/* Buttons 
+---------------------------------*/
+
+.action_button{
+	padding:20px 0 0 60px;
+
+
+	span{
+		font-size:18px;
+		color:#333333;
+		display:block;
+		margin:0 0 20px 0;
+	}
+
+	a {
+		background:$themeColor1;
+		text-transform:uppercase;
+		display:block;
+		width:176px;
+		height:49px;
+		text-align:center;
+		line-height:49px;
+		font-size:16px;
+		color:#ffffff;
+		border-radius:3px;
+		font-family:'Dosis';
+		font-weight: 600;
+		transition:all 0.2s ease-in-out;
+		-moz-transition:all 0.2s ease-in-out;
+		-webkit-transition:all 0.2s ease-in-out;
+
+		&:hover{
+			background:$themeColor3;
+		}
+	}
+}
+	/* Nav Styles
 ---------------------------------*/
 
 .nav{
@@ -257,13 +293,7 @@ p{
 	padding: $sectionArea
 }
 
-.service_block{
-	text-align:center;
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-.service_icon{
+.essential_icon{
 	border:2px solid $themeColor1;
 	border-radius:50%;
 	width:90px;
@@ -310,22 +340,25 @@ p{
 	}
 }
 
+.essential_block{
+	text-align:center;
+	padding-left: 15px;
+	padding-right: 15px;
 
-.service_block h3{
-	font-family: 'Dosis';
-	font-weight: 600;
-	font-size:18px;
-	color:#111111;
-	margin:35px 0 18px;
+	h3{
+		font-family: 'Dosis';
+		font-weight: 600;
+		font-size:18px;
+		color:#111111;
+		margin:35px 0 18px;
+	}
+
+	p{
+		font-size:16px;
+		color:$themeColor4;
+		margin:0px;
+	}
 }
-
-.service_block p{
-	font-size:16px;
-	color:$themeColor4;
-	margin:0px;
-}
-
-
 
 /* news
 ---------------------------------*/
@@ -387,45 +420,13 @@ p{
 }
 
 .example-list-col2{
+	padding-left: 60px;
 	overflow:hidden;	
 }
 
 
 .main-section.alabaster{
 	background:#fafafa;
-}
-
-.work_bottom{
-	padding:20px 0 0 60px;
-}
-
-.work_bottom span{
-	font-size:18px;
-	color:#333333;
-	display:block;
-	margin:0 0 20px 0;
-}
-
-a.contact_btn{
-	background:$themeColor1;
-	text-transform:uppercase;
-	display:block;
-	width:176px;
-	height:49px;
-	text-align:center;
-	line-height:49px;
-	font-size:16px;
-	color:#ffffff;
-	border-radius:3px;
-	font-family:'Dosis';
-	font-weight: 600;
-	transition:all 0.2s ease-in-out;
-	-moz-transition:all 0.2s ease-in-out;
-	-webkit-transition:all 0.2s ease-in-out;
-}
-
-a.contact_btn:hover{
-	background:$themeColor3;
 }
 
 .validation {
