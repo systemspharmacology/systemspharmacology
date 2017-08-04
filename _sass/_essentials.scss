@@ -45,6 +45,14 @@
     padding-left: 15px;
     padding-right: 15px;
     
+   	@include medium {
+      margin:0 0 20px 0;
+    }
+   
+    @include medium-2 {
+      margin:0 0 35px 0;
+    }
+
     h3{
       font-family: 'Dosis';
       font-weight: 600;

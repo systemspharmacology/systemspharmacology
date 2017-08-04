@@ -2,8 +2,8 @@
 background:$news-background-color;
     
   .news_container_outer{
-    background:url(../img/news_pic.png) no-repeat right bottom;
-  }	
+    @include section_area_outer("news_pic");
+  }
   
   .news-list{
     padding:0 0 0 0;

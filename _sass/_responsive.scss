@@ -1,156 +1,34 @@
-@import "variables";
 
-@media only screen and (min-width: 980px) and (max-width: 1200px) {
-	.intro_container_outer, .news_container_outer{ 
-		background-size:400px;
-	}
-}
-   
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	/****Ipad Portrait 768 Container 750 ****/
-	body{ font-size:13px;}
-	p{ line-height:20px ;}
-	.header h1{ font-size:46px;}
-	.main-nav ul li a{ padding:14px;}
-	.small-logo{ padding:0 20px;}
-	h2{ font-size:30px}
-	h6{ font-size:16px;}
-	h3{ font-size:15px;}
-	.service-list{ margin-bottom:20px; font-size:15px;}
-	.users-area ul li{ margin:0 1%; float:left; width:18%;}
-	.users-area ul li a{ display:block;}
-	.users-area ul li a img{ display:block;}
+	
+	.c-logo-part ul li{ margin:0 1%; float:left; width:18%;}
+	.c-logo-part ul li a{ display:block;}
+	.c-logo-part ul li a img{ display:block;}
 	.form{ margin:0;}
-	.contact-info-box{ margin:0 ;}
-	.social-link{ margin:0;}
 	
 	.main-nav{ display:block !important; }
 	.main-nav li a{ padding:8px 15px;}
-
-	.intro_container_outer, .news_container_outer{ 
-		background-size:327px;
-	}
-
-	.intro_area, .examples_area, .essentials_area, .news_area {
-		 padding: $sectionAreaS;
-	}
-
-	#essentials, #news, #intro, #examples, #testimonials { 
-		padding-top: $sectionPaddingTopS;
-	}
-
-	.intro_area h2{ font-size:24px;}
-	
-	.essential_block{ margin:0 0 35px 0;}
-
-	#client_outer{ padding:45px 0px;}
-	.quote_section{ width:495px; margin: 6px 0 0 30px;}
-	.client_area{ width:700px;}
-	.client_profile_pic{ width:150px; height:150px;}
-	.quote_section.flt{ margin:6px 0 0 0;}
 }
 
 @media only screen and (max-width: 767px) {
-	/****Mobile Landscape 480 Container 100% ****/
-	.client_profile_pic{ float:none; width:150px; height:150px; margin:0px auto;}
-	#client_outer{ padding:25px 0px;}
 	.client_profile.flt{ float:none;}
-	.users-area ul li{  margin:0 6px;}
-	.users-area ul a{ width:100px;}
-	.client_profile{ float:none; margin:0 0 20px 0;}
-	.client_area{ width:436px;}
-	.quote_section{ width:auto; float:none;}
+	.c-logo-part ul li{  margin:0 6px;}
+	.c-logo-part ul a{ width:100px;}
 
-	
-	.intro_area, .examples_area, .essentials_area, .news_area {
-		 padding: $sectionAreaXs;
-	}
-
-	#essentials, #news, #intro, #examples, #testimonials { 
-		padding-top: $sectionPaddingTopXs;
-	}
-
-	.essential_block{ margin:0 0 20px 0;}
-	
-	.intro_container_outer, .news_container_outer{
-		background-size: 90% auto;
-		 -webkit-background-size: 90% 
-			auto;padding-bottom: 68%;
-	}
-
-	.intro_area h2{ font-size:29px;}
-
-	body{ font-size:12px;}
-	h2{ font-size:26px;}
-	h3{ font-size:14px;}
-	h6{ font-size:16px; margin-bottom:40px;}
-	
-	p{ line-height:18px;}
-
-	.service-list{ font-size:12px; margin-bottom:20px;}
-	.we-create li{ font-size:13px; padding:0 0 0 8px}
-	.header h1{ font-size:28px;}
-	.header{ padding:60px 0;}
-	.main-nav{ display:none; position:absolute; left:0; width:100%; top:74px; margin:0 auto; flote : none; background:#fff;}
-	.main-nav li{ display:block;}
-	.main-nav li.small-logo{ display:none;}
-	.main-nav li a{ display:block; padding:7px 32px; border-bottom:none;}
-	.main-nav li a:hover{color:#7cc576}
-	.team-leader-box{ max-width:307px; width:auto; float:none; margin:0 auto;	}
-	.team-leader-box:nth-of-type(3n){ margin:0 auto}
-	.res-nav_click{ display:block;}
-	.featured-work{ font-size:12px; margin-top:30px;}
-	.featured-box{ font-size:12px;}
-	.featured-box p{ line-height:18px; }
 	.users-area ul a{ margin-bottom:5px;}
 	.team{ padding:60px 0 50px;}
-	.business-talking h2{ font-size:36px;}
-	.contact-info-box{ margin:0 0 12px 30px; font-size:12px;}
-	.contact-info-box span{ line-height:18px;}
-	.social-link{ margin-left:30px;} 
-	.form{ margin:0 30px;}
-	.copyright{ font-size:12px;}
-	.business-talking a{ padding:10px 25px; font-size:14px;}
-	.contact{ padding:60px 0 70px}
-	.client-part-haead{ font-size:20px; line-height:30px;}
-	.link{ font-size:14px; padding:10px 25px;}
-	.logo{ width:100px;}
-	.contact{ background-size:contain;}
-	.logo{ margin:0px auto 10px; float:none; }
-	.nav{ float:none; position:absolute; width:100%; top: 73px;}
 	
 	toggle.ul{ background:#fff; width:100%;}
-	.nav ul li{ border-bottom:1px solid #CCC; display:block; float:none; width:100%; margin:0px; text-align:center;}
-	.nav ul li a{ padding:6px 0px}
-	.res-nav_click{ 
-		bottom: -42px;
-		display: block;
-		font-size: 25px;
-		left: 48%;
-		position: absolute;
-	}
-	.res-nav_click a{ text-decoration:none;}
-	.res-nav_click a:hover{ text-decoration:none; color:#060;}
-	.nav ul{ background:#fff; display:none;}
-	
-.nav ul.toggle{
-	display:none;
-	visibility:visible;
-	height:auto;
-	overflow:auto;
-	}
-}
+}	
+
 
 @media only screen and (max-width: 479px) {
-	/****Mobile Portrait 320 ****/
-	.contact-info-box{ margin-left:0px;}
 	.header{ padding:40px;}
-	.social-link{ margin-left:0px;}
-	.form{ margin:0}
 	.users-area ul li{ display:block;}
 	.intro_area h2{ font-size:20px;} 
 	.client_area{ width:276px;}
 	.quote_section p{ font-size:15px;} 
 	.users-area{ padding:18px 0px;}
-	.users-area ul li{ margin:6px 0px; display:block;}	
+	.c-logo-part ul li{ margin:6px 0px; display:block;}	
 }

@@ -17,15 +17,15 @@ $(document).ready(function(e) {
   
   $(window).bind('scroll', function() {
     if ($(window).scrollTop() > 0) {
-      $('#header_outer').addClass('fixed');
+      $('.header').addClass('fixed');
     }
     else {
-      $('#header_outer').removeClass('fixed');
+      $('.header').removeClass('fixed');
     }
   });
   
   
-  $('#header_outer').scrollToFixed();
+  $('#header').scrollToFixed();
   $('.res-nav_click').click(function(){
     $('.main-nav').slideToggle();
     return false    

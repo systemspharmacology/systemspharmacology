@@ -1,11 +1,11 @@
+
 .intro {
 	background:$intro-background-color;
   
   .intro_container_outer{
-    background:url(../img/intro_pic.png) no-repeat right bottom;
+    @include section_area_outer("intro_pic");
   }
-  
-	
+  	
 	h3 {
 		font-size:16px;
 		color:$theme-color1;
@@ -22,7 +22,19 @@
 		margin:0 0 26px 0;
 		font-family:'Dosis';
 		text-align:left;
-		font-weight:700;
+    font-weight:700;
+
+    @include medium {
+		  font-size:29px;
+	  }
+
+    @include mobile {
+		  font-size:20px;
+    }
+      
+	  @include medium-2 {
+      font-size:24px;
+  	}
 	}
 	
 	p{
