@@ -24,17 +24,17 @@
 		text-align:left;
     font-weight:700;
 
+    @include medium-2 {
+      font-size:24px;
+    }
+    
     @include medium {
 		  font-size:29px;
 	  }
 
     @include mobile {
 		  font-size:20px;
-    }
-      
-	  @include medium-2 {
-      font-size:24px;
-  	}
+    }    
 	}
 	
 	p{

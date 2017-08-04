@@ -59,15 +59,15 @@
 	width:220px;
 	height:220px;
 	
+	@include medium-2 {
+		width:150px; height:150px;
+	}
+
 	@include medium {
 		float:none; 
 		width:150px; 
 		height:150px; 
 		margin:0px auto;
-	}
-
-	@include medium-2 {
-		width:150px; height:150px;
 	}
 
 	img{
@@ -84,6 +84,11 @@
 	float:left;
 	margin:35px 0 0 30px;
 
+	@include medium-2 {
+		width:495px; 
+		margin: 6px 0 0 30px;
+	}
+
 	@include medium {
 		width:auto; 
 		float:none;
@@ -94,12 +99,6 @@
 		@include medium-2 {
 			margin:6px 0 0 0;
 		}
-
-	}
-
-	@include medium-2 {
-		width:495px; 
-		margin: 6px 0 0 30px;
 	}
 }
 

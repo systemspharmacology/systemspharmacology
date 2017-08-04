@@ -1,20 +1,12 @@
 .footer {
-  @include small {
-    position: static;
-  }
-  
-  
   background-color: $footer-background-color;
   height: 90px;
   color: $footer-text-color;
   padding-top: 22px;
   
   @include small {
-    height: 326px;
-  }
-  
-  .container-fluid {
-    max-width: 1210px;
+    position: static;
+    height: auto;
   }
   
   .footer-logo {        
@@ -28,9 +20,6 @@
       float: none;
       display: block;
       margin-bottom: 24px;
-    }
-    
-    @include small {
       margin: 8px 0 12px;
     }
     
@@ -52,10 +41,8 @@
     @include small {
       float: none;
       padding: 0;
-    }
-    
-    @include small {
       margin-top: 0;
+      padding-bottom: 20px;
     }
     
     li {
@@ -78,7 +65,6 @@
         overflow: hidden;
         display: inline-block;
         margin-left: 48px;
-        // margin-top: 3px;
         opacity: 0.4;
         
         &:hover,

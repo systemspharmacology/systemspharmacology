@@ -1,29 +1,7 @@
 .news{
-background:$news-background-color;
-    
+  background:$news-background-color;
+  
   .news_container_outer{
     @include section_area_outer("news_pic");
-  }
-  
-  .news-list{
-    padding:0 0 0 0;
-    font-size:14px;
-    margin-bottom:40px;
-  }
-  
-  .news-list-col1{
-    float:left;
-    width:60px;
-    text-align:center;
-    
-    i{
-      color:#888;
-      font-size: 19px;
-      font-style: normal;
-      line-height: 20px;
-    }
-  }
-  .news-list-col2{
-    overflow:hidden;	
   }
 }
