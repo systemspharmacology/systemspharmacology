@@ -2,8 +2,6 @@
 @import "variables";
 
 .footer {
-  
-  
   @include small {
     position: static;
   }
@@ -73,8 +71,8 @@
       @include easeLinear;
       
       &:focus {
-        color: $footerTextColor;
-        border-color: $footerTextColor;
+        color: $footerBackgroundColor;
+        border-color: $footerBackgroundColor;
         background: none;
       }
       
@@ -91,7 +89,7 @@
     .signup-button {
       @include action-button($footerTextColor, #f4f4f4, black);
       
-      border: 1px solid $footerTextColor;
+      border: 1px solid $footerBackgroundColor;
       border-radius: 4px;
       
       @include small {
