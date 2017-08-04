@@ -1,0 +1,45 @@
+#intro {
+	position:relative;
+	padding-top: $sectionPaddingTop;
+	background:$darkBackgroundColor;
+}
+
+.intro_container_outer{
+	background:url(../img/intro_pic.png) no-repeat right bottom;
+}
+
+.intro_area {
+	padding: $sectionArea;
+	
+	h3 {
+		font-size:16px;
+		color:$themeColor1;
+		margin:0 0 20px 0;
+		text-align:left;
+		font-family:'Lato';
+		font-weight: 700;
+	}
+	
+	h2 {
+		font-size:40px;
+		color:#111111;
+		line-height: 52px;
+		margin:0 0 26px 0;
+		font-family:'Dosis';
+		text-align:left;
+		font-weight:700;
+	}
+	
+	p{
+		font-size:16px;
+		color:$themeColor4;
+		margin:0 0 30px 0;
+		line-height: 26px;
+		font-family:'Lato';
+	}
+	
+	.learn_more{
+		display: block;
+		@include action-button($themeColor3, $themeColor4);
+	}
+}

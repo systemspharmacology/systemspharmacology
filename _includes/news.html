@@ -7,7 +7,7 @@
           <div class="col-lg-6 col-sm-6 wow fadeInLeft delay-05s">
             {% for news in site.news %}
             <div class="news-list">
-              <div class="news-list-col1"> <i class="icon-{{news.icon}}"></i> </div>
+              <div class="news-list-col1"><i class="fa-{{news.icon}}"></i></div>
               <div class="news-list-col2">
                 <h3><a href="{{site.github}}{{news.github_url}}">{{news.title}}</a></h3>
                 <p>{{news.description}}</p>
