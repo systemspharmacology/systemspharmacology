@@ -245,26 +245,9 @@ p{
 		font-family:'Lato';
 	}
 	
-	a.learn_more2{
-		font-family: 'Dosis';
-		display:block;
-		font-size:16px;
-		color:#ffffff;
-		background:$themeColor3;
-		width:178px;
-		height:46px;
-		line-height:46px;
-		border-radius:3px;
-		text-align:center;
-		font-family:''Dosis'';
-		text-transform:uppercase;
-		font-weight: 600;
-		transition:all 0.2s ease-in-out;
-		-moz-transition:all 0.2s ease-in-out;
-		-webkit-transition:all 0.2s ease-in-out;
-		&:hover{
-			background:$themeColor4;
-		}
+	.learn_more{
+		display: block;
+		@include action-button($themeColor3, $themeColor4);
 	}
 }
 
