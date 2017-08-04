@@ -1,74 +1,62 @@
-#essentials{
-	padding-top: $sectionPaddingTop;
+@mixin essential-icon($color, $index){
+  &.icon#{$index}{
+     border-color: $color;  
+        span {
+          background:$color;
+        }
+  }
 }
 
-.essentials_area{
-	padding: $sectionArea
-}
+.essentials{
+  	background:$essentials-background-color;
 
-.essential_icon{
-	border:2px solid $themeColor1;
-	border-radius:50%;
-	width:90px;
-	height:90px;
-	margin:0px auto 25px;
-	
-	span {
-		background:$themeColor1;
-		border: 3px solid #fff;
-		border-radius: 50%;
-		display: block;
-		height: 100%;
-		width: 100%;
-	}
-	
-	&.icon2{
-		border-color: $themeColor2;
-		span {
-			background:$themeColor2;
-		}
-	}
-	
-	&.icon3{
-		border-color: $themeColor3;
-		span {
-			background:$themeColor3;
-		}
-	}
-	
-	&.icon4{
-		border-color: $themeColor4;
-		span {
-			background:$themeColor4;
-		}
-	}
-	
-	i{
-		color: #fff;
-		font-size: 40px;
-		margin-top: 0;
-		position: relative;
-		top: 14px;
-		z-index: 20;
-	}
-}
+  .essential_icon{
+    border:2px solid;
+    border-radius:50%;
+    width:90px;
+    height:90px;
+    margin:0px auto 25px;
+    
+    span {
+      border: 3px solid #fff;
+      border-radius: 50%;
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+    
+    @include essential-icon($theme-color1,  1);
+    @include essential-icon($theme-color2,  2);
+    @include essential-icon($theme-color3,  3);
+    @include essential-icon($theme-color4,  4);
+    
+    i{
+      color: #fff;
+      font-size: 40px;
+      margin-top: 0;
+      position: relative;
+      top: 14px;
+      z-index: 20;
+    }
+  }
 
-.essential_block{
-	text-align:center;
-	padding-left: 15px;
-	padding-right: 15px;
-	
-	h3{
-		font-family: 'Dosis';
-		font-weight: 600;
-		font-size:18px;
-		color:#111111;
-		margin:35px 0 18px;
-	}
-	
-	p{
-		font-size:16px;
-		color:$themeColor4;
-		margin:0px;
-	}
+  .essential_block{
+    text-align:center;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    h3{
+      font-family: 'Dosis';
+      font-weight: 600;
+      font-size:18px;
+      color:#111111;
+      margin:35px 0 18px;
+    }
+    
+    p{
+      font-size:16px;
+      color:$body-text-color;
+      margin:0px;
+    }
+  }
 }

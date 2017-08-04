@@ -1,23 +1,62 @@
-$backgroundColor: white;
-$darkBackgroundColor: #f9f9f9;
-$themeColor1: #62bb46;
-$themeColor2: #00aeef;
-$themeColor3: #f18903;
-$themeColor4: #807f80;
-$footerBackgroundColor: $themeColor2;
-$footerTextColor: #FFF;
-$footerNoteBackgroundColor: #232b40;
-$footerNoteTextColor: #888fa1;
+$theme-color1: #62bb46;
+$theme-color2: #00aeef;
+$theme-color3: #f18903;
+$theme-color4: #807f80;
 
-$defaultButtonActionBackgroundColor :$themeColor1;
-$defaultButtonActionHoverColor : $themeColor3;
-$defaultButtonActionTextColor : #FFF;
 
-$sectionPaddingTop: 70px;
-$sectionArea: 70px 0 70px;
+$body-text-color: $theme-color4; 
+$body-background-color: white;
 
-$sectionPaddingTopS: 40px;
-$sectionAreaS: 40px 0 40px;
+$text-color-h2:  #222222;
+$text-color-h3:  #222222;
+$text-color-h6:  $theme-color4;
 
-$sectionPaddingTopXs: 25px;
-$sectionAreaXs: 25px 0 25px;
+$nav-text-color:  #222222;
+
+$section-background-color: #FFF;
+$section-offset-background-color: #f9f9f9;
+
+$section-padding-top: 70px;
+$section-area-padding: 70px 0 70px;
+
+$section-padding-top-sm: 40px;
+$section-area-padding-sm: 40px 0 40px;
+
+$section-padding-top-xs: 25px;
+$section-area-padding-xs: 25px 0 25px;
+
+
+$default-button-action-background-color :$theme-color1;
+$default-button-action-hover-color : $theme-color3;
+$default-button-action-text-color : #FFF;
+$default-link-hover-color :  $theme-color3;
+
+
+$header-background-color: $section-background-color;
+$intro-background-color: $section-offset-background-color;
+$essentials-background-color: $section-background-color;
+$news-background-color: $section-offset-background-color;
+$examples-background-color: $section-background-color;
+
+$newsletter-background-color: $theme-color2;
+$newsletter-text-color: #FFF;
+$footer-background-color: #232b40;
+$footer-text-color: #888fa1;
+
+
+
+/* FONTS*/
+$body-font-family: 'Lato', sans-serif;
+$font-family-h2: 'Dosis';
+$font-family-h3: 'Dosis', sans-serif;
+$font-family-h6: 'Open Sans', sans-serif;
+$font-family-navbar: 'Dosis';
+
+/* FONT SIZES*/
+$body-font-size: 14px;
+$font-size-h2: 38px;
+$font-size-h3: 16px;
+$font-size-h6: 16px;
+$font-size-navbar: 14px;
+
+

@@ -1,19 +1,14 @@
-#intro {
-	position:relative;
-	padding-top: $sectionPaddingTop;
-	background:$darkBackgroundColor;
-}
-
-.intro_container_outer{
-	background:url(../img/intro_pic.png) no-repeat right bottom;
-}
-
-.intro_area {
-	padding: $sectionArea;
+.intro {
+	background:$intro-background-color;
+  
+  .intro_container_outer{
+    background:url(../img/intro_pic.png) no-repeat right bottom;
+  }
+  
 	
 	h3 {
 		font-size:16px;
-		color:$themeColor1;
+		color:$theme-color1;
 		margin:0 0 20px 0;
 		text-align:left;
 		font-family:'Lato';
@@ -32,7 +27,7 @@
 	
 	p{
 		font-size:16px;
-		color:$themeColor4;
+		color:$theme-color4;
 		margin:0 0 30px 0;
 		line-height: 26px;
 		font-family:'Lato';
@@ -40,6 +35,6 @@
 	
 	.learn_more{
 		display: block;
-		@include action-button($themeColor3, $themeColor4);
+		@include action-button($theme-color3, $theme-color4);
 	}
 }

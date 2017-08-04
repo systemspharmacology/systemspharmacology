@@ -2,6 +2,98 @@
 @import "variables";
 @import "mixins";
 
+ul{ 
+	list-style:none;
+}
+
+.figure{ 
+	margin:0px;
+}
+
+img{ 
+	max-width:100%;
+}
+
+a, a:hover, a:active {  
+	outline:0px !important;
+}
+
+a:hover {
+	color:$default-link-hover-color ;
+}
+
+
+/* Primary Styles
+---------------------------------*/
+body {
+	background: $body-background-color;
+	font-family: $body-font-family;
+	font-size:$body-font-size;
+	font-weight:normal;
+	color:$body-text-color;
+	margin:0;
+}
+
+h2{
+	font-size:$font-size-h2;
+	color: $text-color-h2;
+	font-family:$font-family-h2;
+	font-weight:700;
+	margin:35px 0 25px 0;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+h3{
+	font-family: $font-family-h3;
+	font-weight: 600;
+	color:$text-color-h3;
+	font-size:$font-size-h3;
+	margin:0 0 5px 0;
+	text-transform:uppercase;
+}
+h6{
+	font-size:$font-size-h6;
+	color:$text-color-h6;
+	font-family: $font-family-h6;
+	font-weight:400;
+	text-align:center;
+	margin:0 0 60px 0;
+}
+p{
+	line-height:24px;
+	margin:0;
+}
+
+.action_button{
+	padding:20px 0 0 60px;
+	
+	span{
+		font-size:18px;
+		color:#333333;
+		display:block;
+		margin:0 0 20px 0;
+	}
+	
+	a {
+		@include action-button;
+		display:block;
+	}
+}
+
+
+
+/* Sections
+---------------------------------*/
+.section{
+  position:relative;
+	padding-top: $section-padding-top;
+
+	.section_area{
+		padding: $section-area-padding;
+	}
+}
+
 /* Float Elements 
 ---------------------------------*/
 .fl-lt {
@@ -10,6 +102,7 @@
 .fl-rt {
 	float:right;
 }
+
 
 /* Clear Floated Elements
 ---------------------------------*/
@@ -34,162 +127,4 @@
 
 .clearfix:after {
 	clear: both;
-}
-
-ul{ 
-	list-style:none;
-}
-
-.figure{ 
-	margin:0px;
-}
-
-img{ 
-	max-width:100%;
-}
-
-a, a:hover, a:active {  
-	outline:0px !important;
-}
-
-a:hover {
-	color:$themeColor3;
-}
-
-@font-face {
-	font-family: 'FontAwesome';
-	src: url('../fonts/fontawesome-webfont.eot?v=4.1.0');
-	src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'LatoRegular';
-	src: url('../fonts/lato-regular.eot');
-	src: url('../fonts/lato-regular.eot') format('embedded-opentype'),
-	url('../fonts/lato-regular.woff2') format('woff2'),
-	url('../fonts/lato-regular.woff') format('woff'),
-	url('../fonts/lato-regular.ttf') format('truetype'),
-	url('../fonts/lato-regular.svg#LatoRegular') format('svg');
-}
-@font-face {
-	font-family: 'LatoBoldBold';
-	src: url('../fonts/lato-bold.eot');
-	src: url('../fonts/lato-bold.eot') format('embedded-opentype'),
-	url('../fonts/lato-bold.woff2') format('woff2'),
-	url('../fonts/lato-bold.woff') format('woff'),
-	url('../fonts/lato-bold.ttf') format('truetype'),
-	url('../fonts/lato-bold.svg#LatoBoldBold') format('svg');
-}
-@font-face {
-	font-family: 'DosisBold';
-	src: url('../fonts/dosis-bold.eot');
-	src: url('../fonts/dosis-bold.eot') format('embedded-opentype'),
-	url('../fonts/dosis-bold.woff2') format('woff2'),
-	url('../fonts/dosis-bold.woff') format('woff'),
-	url('../fonts/dosis-bold.ttf') format('truetype'),
-	url('../fonts/dosis-bold.svg#DosisBold') format('svg');
-}
-
-/* Primary Styles
----------------------------------*/
-body {
-	background: $backgroundColor;
-	font-family: 'Lato', sans-serif;
-	font-size:14px;
-	font-weight:normal;
-	color:$themeColor4;
-	margin:0;
-}
-h2{
-	font-size:38px;
-	color:#222222;
-	font-family:'Dosis';
-	font-weight:700;
-	margin:35px 0 25px 0;
-	text-align:center;
-	text-transform:uppercase;
-}
-h3{
-	font-family: 'Dosis', sans-serif;
-	font-weight: 600;
-	color:#222222;
-	font-size:16px;
-	margin:0 0 5px 0;
-	text-transform:uppercase;
-}
-h6{
-	font-size:16px;
-	color:$themeColor4;
-	font-family: 'Open Sans', sans-serif;
-	font-weight:400;
-	text-align:center;
-	margin:0 0 60px 0;
-}
-p{
-	line-height:24px;
-	margin:0;
-}
-
-.action_button{
-	padding:20px 0 0 60px;
-	
-	span{
-		font-size:18px;
-		color:#333333;
-		display:block;
-		margin:0 0 20px 0;
-	}
-	
-	a {
-		@include action-button($themeColor1);
-		display:block;
-	}
-}
-
-/* Animation Timers
----------------------------------*/
-.delay-02s { 
-	animation-delay: 0.2s; 
-	-webkit-animation-delay: 0.2s; 
-}
-.delay-03s { 
-	animation-delay: 0.3s; 
-	-webkit-animation-delay: 0.3s; 
-}
-.delay-04s { 
-	animation-delay: 0.4s; 
-	-webkit-animation-delay: 0.4s; 
-}
-
-.delay-05s { 
-	animation-delay: 0.5s; 
-	-webkit-animation-delay: 0.5s; 
-}
-.delay-06s { 
-	animation-delay: 0.6s; 
-	-webkit-animation-delay: 0.6s; 
-}
-
-.delay-07s { 
-	animation-delay: 0.7s; 
-	-webkit-animation-delay: 0.7s; 
-}
-.delay-08s { 
-	animation-delay: 0.8s; 
-	-webkit-animation-delay: 0.8s; 
-}
-
-.delay-09s { 
-	animation-delay: 0.9s; 
-	-webkit-animation-delay: 0.9s; 
-}
-.delay-1s { 
-	animation-delay: 1s; 
-	-webkit-animation-delay: 1s; 
-}
-.delay-12s { 
-	animation-delay: 1.2s; 
-	-webkit-animation-delay: 1.2s; 
 }

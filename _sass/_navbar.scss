@@ -1,54 +1,53 @@
-#header_outer{
-	background:$backgroundColor;
+@import "variables";
+
+.header{
+	background:$header-background-color;
 	padding:30px 0px;
-}
-
-.header_section{
-	position:relative;
-}
-
-.logo{
-	float:left;
-}
-
-.res-nav_click{ 
-  display:none;
-}
-
-.nav{
-  float:right;
   
-  ul{
-    list-style:none;
-    padding:0px;
+  .header_area{
+    position:relative;
+  }
+  
+  .logo{
+    float:left;
+  }
+  
+  .res-nav_click{ 
+    display:none;
+  }
+  
+  .nav{
+    float:right;
     
-    &.toggle{
-      display:none;
-      visibility:hidden;
-      height:0px;
-      overflow:hidden;
-      margin-bottom: 0;
-    }
-    
-    li{
-      display:inline-block;
-      margin:0 23px;
+    ul{
+      list-style:none;
+      padding:0px;
       
-      a{
-        display:block;
-        font-size:14px;
-        color:#222222;
-        font-family:'Dosis';
-        text-decoration:none;
-        text-transform:uppercase;
-        font-weight: 600;
-        transition:all 0.2s ease-in-out;
-        -moz-transition:all 0.2s ease-in-out;
-        -webkit-transition:all 0.2s ease-in-out;	
+      &.toggle{
+        display:none;
+        visibility:hidden;
+        height:0px;
+        overflow:hidden;
+        margin-bottom: 0;
+      }
+      
+      li{
+        display:inline-block;
+        margin:0 23px;
         
-        
-        &:hover{
-          color:$themeColor3;
+        a{
+          display:block;
+          font-size:$font-size-navbar;
+          color:$nav-text-color;
+          font-family:$font-family-navbar;
+          text-decoration:none;
+          text-transform:uppercase;
+          font-weight: 600;
+          @include easeLinear;
+
+          &:hover{
+            color: $default-link-hover-color;
+          }
         }
       }
     }

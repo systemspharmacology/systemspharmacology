@@ -40,7 +40,7 @@
   }
 }
 
-@mixin action-button($backgroundColor:$defaultButtonActionBackgroundColor, $hoverColor:$defaultButtonActionHoverColor, $textColor:$defaultButtonActionTextColor){
+@mixin action-button($backgroundColor:$default-button-action-background-color, $hoverColor:$default-button-action-hover-color, $textColor:$default-button-action-text-color){
   background: $backgroundColor;
   text-transform:uppercase;
   width:176px;
@@ -136,6 +136,8 @@
 
 @mixin easeLinear ($time: 0.2s, $easing: linear, $props: all) {
   transition: $props $time $easing 0s;    
+  -moz-transition: $props $time $easing 0s;    
+  -moz-transition: $props $time $easing 0s;    
 }
 
 @mixin rotating ($time: 9s) {
