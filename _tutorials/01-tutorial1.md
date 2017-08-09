@@ -1,5 +1,5 @@
 ---
 title:  Tutorial 1
-description: First tutorial explaining how to work with PK-Sim
-github_url: Example_Aciclovir 
+description: Applied Concepts in PBPK Modeling: How to Build a PBPK/PD Model.
+github_url: OSP-based-publications/issues/97 
 ---
