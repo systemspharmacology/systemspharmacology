@@ -8,6 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: www.open-systems-pharmacology.org # the base hostname & protocol for your site, e.g. http://example.com
 base: open-systems-pharmacology.org # the base hostname & protocol for your site, e.g. http://example.com
 github: https://github.com/Open-Systems-Pharmacology/ 
+github_suite_master: https://github.com/Open-Systems-Pharmacology/Suite/blob/master/
 twitter_username: open-systems-pharmacology
 github_username:  open-systems-pharmacology
 tracking_id: UA-104123195-1

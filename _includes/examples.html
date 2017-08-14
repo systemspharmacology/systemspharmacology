@@ -8,7 +8,7 @@
           {% for example in site.examples limit: rows %}
           <div class="item-list">
             <div class="item-col">
-              <h3><a href="{{site.github}}{{example.github_url}}">{{example.title}}</a></h3>
+              <h3><a href="{{site.github}}{{example.github_url}}" target="_blank">{{example.title}}</a></h3>
               <p>{{example.description}}</p>
             </div>
           </div>
@@ -19,15 +19,17 @@
           {% for example in site.examples offset: rows %}
           <div class="item-list">
             <div class="item-col">
-              <h3><a href="{{site.github}}{{example.github_url}}">{{example.title}}</a></h3>
+              <h3><a href="{{site.github}}{{example.github_url}}" target="_blank">{{example.title}}</a></h3>
               <p>{{example.description}}</p>
             </div>
           </div>
           {% endfor %}
         </div>
       </div>
-      <div class="action_button"> <span>Take a look at all our examples</span> <a href="http://examples.{{site.base}}/">Browse</a> </div>
-      
+      <div class="action_button"> 
+        <span>Take a look at all our examples</span> 
+        <a href="http://examples.{{site.base}}/" target="_blank">Browse</a> 
+      </div>
     </div>
   </div>
 </section>
