@@ -7,17 +7,17 @@ $theme-color4: #807f80;
 $body-text-color: $theme-color4; 
 $body-background-color: white;
 
-$text-color-h2:  #222222;
-$text-color-h3:  #222222;
+$text-color-h2:  #444;
+$text-color-h3:  #444;
 $text-color-h6:  $theme-color4;
 
-$nav-text-color:  #222222;
+$nav-text-color:  $theme-color4;
 
 $section-background-color: #FFF;
 $section-offset-background-color: #f6f6f6;
 
 $section-padding-top: 70px;
-$section-area-padding: 70px 0 70px;
+$section-area-padding: 40px 0 70px;
 
 $section-padding-top-sm: 40px;
 $section-area-padding-sm: 40px 0 40px;

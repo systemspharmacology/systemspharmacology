@@ -52,6 +52,7 @@ h2{
 	text-transform:uppercase;
 
 	@include medium-2 {
+		margin-top: 35px;
 		font-size: $font-size-h2-sm;
 	}	
 
@@ -131,6 +132,7 @@ p{
 .section{
 	position:relative;
 	padding-top: $section-padding-top;
+	
 	@include medium-2 {
 		padding-top: $section-padding-top-sm;
 	}
