@@ -112,6 +112,10 @@ p{
 .action_button{
 	padding:20px 0 0 60px;
 	
+	@include small {
+		padding-top: 0px;	
+	}
+	
 	span{
 		font-size:18px;
 		color:#333333;
@@ -123,6 +127,8 @@ p{
 		@include action-button;
 		display:block;
 	}
+
+	
 }
 
 

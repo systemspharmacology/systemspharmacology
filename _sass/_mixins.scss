@@ -131,7 +131,7 @@
 @mixin section_area_outer($imageName){
   background:url(../img/#{$imageName}.png) no-repeat right bottom;
   
-  @media only screen and (min-width: 980px) and (max-width: 1200px) {
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
     background-size:400px;  
   };
   
@@ -142,7 +142,7 @@
   @media only screen and (max-width: 767px) {
     background-size: 90% auto;
     -webkit-background-size: 90% auto;
-    padding-bottom: 68%;
+    padding-bottom: 70%;
   };
   
 }
