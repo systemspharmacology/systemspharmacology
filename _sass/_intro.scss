@@ -1,11 +1,6 @@
-
 .intro {
-	background:$intro-background-color;
-  
-  .intro_container_outer{
-    @include section_area_outer("intro_pic");
-	}
-	
+	@include background-image('intro-bg.png', $intro-background-color);
+
 	&.section {
 		@media only screen and (min-width: 993px) {
 			padding-top: 30px;
@@ -53,6 +48,6 @@
 	
 	.learn_more{
 		display: block;
-		@include action-button($theme-color3, $theme-color4);
+		@include action-button;
 	}
 }

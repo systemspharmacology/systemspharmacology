@@ -1,17 +1,17 @@
 $theme-color1: #62bb46;
 $theme-color2: #00aeef;
-$theme-color3: #f18903;
+$theme-color3: #F38B00;
 $theme-color4: #807f80;
-
+$header-color : #000000;
 
 $body-text-color: $theme-color4; 
 $body-background-color: white;
 
-$text-color-h2:  #444;
-$text-color-h3:  #444;
+$text-color-h2:  $header-color;
+$text-color-h3:  $header-color;
 $text-color-h6:  $theme-color4;
 
-$nav-text-color:  $theme-color4;
+$nav-text-color:  $header-color;
 
 $section-background-color: #FFF;
 $section-offset-background-color: #f6f6f6;
@@ -26,10 +26,11 @@ $section-padding-top-xs: 25px;
 $section-area-padding-xs: 25px 0 25px;
 
 
-$default-button-action-background-color :$theme-color1;
-$default-button-action-hover-color : $theme-color3;
+$default-button-action-background-color :$theme-color3;
+$default-button-action-hover-color : $theme-color1;
 $default-button-action-text-color : #FFF;
-$default-link-hover-color :  $theme-color3;
+$default-link-color :  $theme-color2;
+$default-link-hover-color :  $theme-color1;
 
 
 $header-background-color: $section-background-color;
@@ -58,7 +59,7 @@ $body-font-size: 14px;
 $font-size-h2: 38px;
 $font-size-h3: 16px;
 $font-size-h6: 16px;
-$font-size-navbar: 14px;
+$font-size-navbar: 17px;
 
 $body-font-size-sm: 13px;
 $font-size-h2-sm: 30px;

@@ -1,14 +1,21 @@
-@mixin essential-icon($color, $index){
+@mixin essential-icon($index){
   &.icon#{$index}{
-     border-color: $color;  
-        span {
-          background:$color;
-        }
+    border-color: $theme-color2;  
+    span {
+      background:$theme-color2;
+      &:hover{
+        background  : $theme-color1;  
+      }
+    }
+    &:hover{
+      border-color: $theme-color1;  
+    }
+
   }
 }
 
 .essentials{
-  	background:$essentials-background-color;
+  background:$essentials-background-color;
 
   .essential_icon{
     border:2px solid;
@@ -25,10 +32,10 @@
       width: 100%;
     }
     
-    @include essential-icon($theme-color1,  1);
-    @include essential-icon($theme-color2,  2);
-    @include essential-icon($theme-color3,  3);
-    @include essential-icon($theme-color4,  4);
+    @include essential-icon(1);
+    @include essential-icon(2);
+    @include essential-icon(3);
+    @include essential-icon(4);
     
     i{
       color: #fff;
@@ -53,12 +60,15 @@
       margin:0 0 20px 0;
     } 
 
-    h3{
+    h2{
       font-family: 'Dosis';
       font-weight: 600;
       font-size:18px;
-      color:#111111;
+      color:$header-color;
       margin:35px 0 18px;
+      a{
+        color: $header-color;
+      }
     }
     
     p{

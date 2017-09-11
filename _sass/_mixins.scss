@@ -45,6 +45,18 @@
   }
 }
 
+@mixin background-image($image, $defaultColor){
+	background:$defaultColor;
+	background-image: url('../img/' + $image);
+  background-repeat: none;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
 @mixin tiny {
   @media only screen and (max-width: 359px) {
     @content;
