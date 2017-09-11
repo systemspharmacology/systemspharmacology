@@ -1,8 +1,7 @@
 .news{
-  background:$news-background-color;
+  @include background-image('news-bg.jpg', $news-background-color);
   
   .news_container_outer{
     @include section_area_outer("news_pic");
   }
-
 }

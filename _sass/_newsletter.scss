@@ -3,7 +3,7 @@
   background-color: $newsletter-background-color;
   
   .signup-title {
-    @include headline(45px, 60px, $newsletter-text-color);
+    color: $newsletter-text-color;
     text-align: center;
     
     @include mobile {

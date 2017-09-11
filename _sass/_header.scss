@@ -5,11 +5,20 @@ nav{
   &.navbar-default .navbar-toggle {
     border-color: $theme-color1;
     background-color: $theme-color1;
+    margin-top: 20px;
     .icon-bar {
       background-color: #fff;
     }
-    &:focus {
+    &:focus, &:hover {
       background-color: $theme-color1;
+    }
+  }
+
+  .logo{
+    width: 270px;
+
+    @include medium {
+      width: 200px;
     }
   }
 

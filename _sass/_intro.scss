@@ -1,10 +1,8 @@
 .intro {
-	@include background-image('intro-bg.png', $intro-background-color);
+	@include background-image('intro-bg.jpg', $intro-background-color);
 
 	&.section {
-		@media only screen and (min-width: 993px) {
-			padding-top: 30px;
-		}
+			padding-top: 120px;
 	}
   	
 	h3 {
@@ -14,6 +12,7 @@
 		text-align:left;
 		font-family:'Lato';
 		font-weight: 700;
+		letter-spacing: 1px;
 	}
 	
 	h2 {
@@ -23,7 +22,7 @@
 		margin:0 0 26px 0;
 		font-family:'Dosis';
 		text-align:left;
-    font-weight:700;
+		font-weight:700;
 
     @include medium-2 {
       font-size:24px;
