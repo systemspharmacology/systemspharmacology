@@ -1,105 +1,121 @@
-.header{
+nav{
 	background:$header-background-color;
-  padding:8px 0px;
   box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
-    
-  .header_area{
-    position:relative;
-  }
   
-  .logo{
-    float:left;
-    @include medium {
-      width:100px;
-      margin:0px auto 35px; 
-      float:none;
+  &.navbar-default .navbar-toggle {
+    border-color: $theme-color1;
+    background-color: $theme-color1;
+    .icon-bar {
+      background-color: #fff;
+    }
+    &:focus {
+      background-color: $theme-color1;
     }
   }
-  
-  .res-nav_click{ 
-    display:none;
-    @include medium {
-      display:block;
-      bottom: -42px;
-      display: block;
-      font-size: 25px;
-      left: 48%;
-      position: absolute;
-      a{ 
-        text-decoration:none;
-        &:hover{
-          text-decoration:none; 
-          color:#060;
-        }
-      }
-    }
-  }
-  
-  .nav{
-    float:right;
+
+  .nav.navbar-nav{
     padding-top: 25px;
-    @include medium {
-      float:none; 
-      position:absolute; 
-      width:100%; 
-      top: 73px;
-    }
-    
-    ul{
-      list-style:none;
-      padding:0px;
-      @include medium {
-        background:#fff;
-        display:none;
-      }
+  
+    li{
+      // @include medium {
+      //   border-bottom:1px solid #CCC; 
+      //   display:block; 
+      //   float:none; 
+      //   width:100%; 
+      //   margin:0px; 
+      //   text-align:center;
+      // }
       
-      &.toggle{
-        display:none;
-        visibility:hidden;
-        height:0px;
-        overflow:hidden;
-        margin-bottom: 0;
-        @include medium {
-          display:none;
-          visibility:visible;
-          height:auto;
-          overflow:auto;
-        }
-      }
-      
-      li{
-        display:inline-block;
-        margin:0 17px;
+      a{
+        display:block;
+        font-size:$font-size-navbar;
+        color:$nav-text-color;
+        font-family:$font-family-navbar;
+        text-decoration:none;
+        text-transform:uppercase;
+        font-weight: 600;
+        letter-spacing: 1px;
+        @include easeLinear;
         
-        @include medium {
-          border-bottom:1px solid #CCC; 
-          display:block; 
-          float:none; 
-          width:100%; 
-          margin:0px; 
-          text-align:center;
+        &:hover{
+          color: $default-link-hover-color;
         }
         
-        a{
-          display:block;
-          font-size:$font-size-navbar;
-          color:$nav-text-color;
-          font-family:$font-family-navbar;
-          text-decoration:none;
-          text-transform:uppercase;
-          font-weight: 600;
-          letter-spacing: 1px;
-          @include easeLinear;
-          
-          &:hover{
-            color: $default-link-hover-color;
-          }
-          
-          @include medium {
-            padding:6px 0px;
-          }
-        }
+        // @include medium {
+        //   padding:6px 0px;
+        // }
       }
     }
   }
 }
+
+
+
+// .header_area{
+  //   position:relative;
+  // }
+  
+  // .logo{
+    //   float:left;
+    //   @include medium {
+      //     width:100px;
+      //     margin:0px auto 35px; 
+      //     float:none;
+      //   }
+      // }
+      
+      // .res-nav_click{ 
+        //   display:none;
+        //   @include medium {
+          //     display:block;
+          //     bottom: -42px;
+          //     display: block;
+          //     font-size: 25px;
+          //     left: 48%;
+          //     position: absolute;
+          //     a{ 
+            //       text-decoration:none;
+            //       &:hover{
+              //         text-decoration:none; 
+              //         color:#060;
+              //       }
+              //     }
+              //   }
+              // }
+              
+              // .nav{
+                //   float:right;
+                //   padding-top: 25px;
+                //   @include medium {
+                  //     float:none; 
+                  //     position:absolute; 
+                  //     width:100%; 
+                  //     top: 73px;
+                  //   }
+                  
+                  //   ul{
+                    //     list-style:none;
+                    //     padding:0px;
+                    //     @include medium {
+                      //       background:#fff;
+                      //       display:none;
+                      //     }
+                      
+                      //     &.toggle{
+                        //       display:none;
+                        //       visibility:hidden;
+                        //       height:0px;
+                        //       overflow:hidden;
+                        //       margin-bottom: 0;
+                        //       @include medium {
+                          //         display:none;
+                          //         visibility:visible;
+                          //         height:auto;
+                          //         overflow:auto;
+                          //       }
+                          //     }
+                          
+                          
+                          // }
+                          //   }
+                          // }

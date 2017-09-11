@@ -1,15 +1,30 @@
- <header id="header" class="header">
-  <div class="container">
-    <div class="header_area">
-      <div class="logo"><a href="javascript:void(0)"><img src="img/logo_header.png" alt=""></a></div>
-      <nav class="nav" id="nav">
-        <ul class="toggle">
-          {% include nav-menus.html %}
-        </ul> 
-        <ul>
-          {% include nav-menus.html %}
-        </ul>
-      </nav>
-      <a class="res-nav_click animated wobble wow"  href="javascript:void(0)"><i class="fa-bars"></i></a> </div>
-    </div>
-  </header>
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+          <a class="navbar-brand page-scroll" href="#page-top">
+            <img alt="Open Systems Pharmacology" class="logo" src="img/logo_header.png">
+          </a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#osp-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="osp-navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="hidden">
+              <a href="#page-top"></a>
+            </li>
+            <li><a class="page-scroll" href="#essentials">Essentials</a></li>
+            <li><a class="page-scroll" href="#news">News &amp; Release</a></li>
+            <li><a class="page-scroll" href="#tutorials">Tutorials</a></li>
+            <li><a class="page-scroll" href="#examples">Examples</a></li>
+            <li><a class="page-scroll" href="#newsletter">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
