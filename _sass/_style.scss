@@ -14,6 +14,10 @@ img{
 	max-width:100%;
 }
 
+a {
+	color: $default-link-color;
+}
+
 a, a:hover, a:active {  
 	outline:0px !important;
 }
@@ -50,6 +54,7 @@ h2{
 	margin:0 0 25px 0;
 	text-align:center;
 	text-transform:uppercase;
+	letter-spacing: 2px;
 
 	@include medium-2 {
 		margin-top: 35px;
@@ -131,8 +136,6 @@ p{
 	
 }
 
-
-
 /* Sections
 ---------------------------------*/
 .section{
@@ -161,6 +164,9 @@ p{
 	}
 }
 
+.circle-icon {
+}
+
 /* lists 
 ---------------------------------*/
 .item-list{
@@ -172,12 +178,12 @@ p{
     	float:left;
     	width:60px;
     	text-align:center;
-    
-    	i{
-      	color:#888;
+			
+			i{
+      	color: $theme-color4;
       	font-size: 19px;
       	font-style: normal;
-      	line-height: 20px;
+				line-height: 20px;
     	}
   	}
 		

@@ -32,6 +32,7 @@
   border-radius:3px;
   font-family:'Dosis';
   font-weight: 600;
+  letter-spacing: 2px;
   a {
     color: $textColor;
   }
@@ -43,6 +44,18 @@
   &:active {
     background:$hoverColor;
   }
+}
+
+@mixin background-image($image, $defaultColor){
+	background:$defaultColor;
+	background-image: url('../img/' + $image);
+  background-repeat: none;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 @mixin tiny {
