@@ -15,14 +15,16 @@
 		letter-spacing: 1px;
 	}
 	
-	h2 {
+	h1 {
 		font-size:40px;
-		color:#111111;
+		color:$header-color;
 		line-height: 52px;
 		margin:0 0 26px 0;
 		font-family:'Dosis';
 		text-align:left;
 		font-weight:700;
+		text-transform: uppercase;
+		letter-spacing: 1px;
 
     @include medium-2 {
 			font-size:24px;

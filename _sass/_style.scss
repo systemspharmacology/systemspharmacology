@@ -6,10 +6,6 @@ ul{
 	list-style:none;
 }
 
-.figure{ 
-	margin:0px;
-}
-
 img{ 
 	max-width:100%;
 }
@@ -73,7 +69,8 @@ h3{
 	font-size:$font-size-h3;
 	margin:0 0 5px 0;
 	text-transform:uppercase;
-
+	letter-spacing: 1px;
+	
 	@include medium-2 {
 		font-size: $font-size-h3-sm;
 	}	
