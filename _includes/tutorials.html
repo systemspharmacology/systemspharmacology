@@ -7,7 +7,7 @@
         <div class="col-lg-6 col-sm-6 wow fadeInLeft delay-05s">
           {% for tutorial in site.tutorials limit: rows %}
           <div class="item-list">
-            <div class="item-col1"><span><i class="fa-{{tutorial.icon}}"></i></span></div>
+            <div class="item-col1"><span><i class="fa fa-{{tutorial.icon}}"></i></span></div>
             
             <div class="item-col2">
               <h3><a href="{{tutorial.full_url}}" target="_blank">{{tutorial.title}}</a></h3>
@@ -20,7 +20,7 @@
         <div class="col-lg-6 col-sm-6 wow fadeInRight delay-05s">
           {% for tutorial in site.tutorials offset: rows %}
           <div class="item-list">
-              <div class="item-col1"><span><i class="fa-{{tutorial.icon}}"></i></span></div>
+              <div class="item-col1"><span><i class="fa fa-{{tutorial.icon}}"></i></span></div>
               <div class="item-col2">
                 <h3><a href="{{tutorial.full_url}}" target="_blank">{{tutorial.title}}</a></h3>
                 <p>{{tutorial.description}}</p>
