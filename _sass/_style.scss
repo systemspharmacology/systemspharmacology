@@ -168,6 +168,10 @@ p{
     font-size:15px;
 		margin-bottom:40px;
 
+		@include small {
+			font-size:14px;
+		}  
+
 		.item-col1{
     	float:left;
     	width:60px;
