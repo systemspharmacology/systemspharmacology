@@ -15,26 +15,13 @@ nav{
   }
 
   .logo{
-    width: 270px;
-
-    @include medium {
-      width: 200px;
-    }
+    height: 50px;
   }
 
   .nav.navbar-nav{
-    padding-top: 25px;
+    padding-top: 16px;
   
     li{
-      // @include medium {
-      //   border-bottom:1px solid #CCC; 
-      //   display:block; 
-      //   float:none; 
-      //   width:100%; 
-      //   margin:0px; 
-      //   text-align:center;
-      // }
-      
       a{
         display:block;
         font-size:$font-size-navbar;
@@ -50,81 +37,7 @@ nav{
           color: $default-link-hover-color;
         }
         
-        // @include medium {
-        //   padding:6px 0px;
-        // }
       }
     }
   }
 }
-
-
-
-// .header_area{
-  //   position:relative;
-  // }
-  
-  // .logo{
-    //   float:left;
-    //   @include medium {
-      //     width:100px;
-      //     margin:0px auto 35px; 
-      //     float:none;
-      //   }
-      // }
-      
-      // .res-nav_click{ 
-        //   display:none;
-        //   @include medium {
-          //     display:block;
-          //     bottom: -42px;
-          //     display: block;
-          //     font-size: 25px;
-          //     left: 48%;
-          //     position: absolute;
-          //     a{ 
-            //       text-decoration:none;
-            //       &:hover{
-              //         text-decoration:none; 
-              //         color:#060;
-              //       }
-              //     }
-              //   }
-              // }
-              
-              // .nav{
-                //   float:right;
-                //   padding-top: 25px;
-                //   @include medium {
-                  //     float:none; 
-                  //     position:absolute; 
-                  //     width:100%; 
-                  //     top: 73px;
-                  //   }
-                  
-                  //   ul{
-                    //     list-style:none;
-                    //     padding:0px;
-                    //     @include medium {
-                      //       background:#fff;
-                      //       display:none;
-                      //     }
-                      
-                      //     &.toggle{
-                        //       display:none;
-                        //       visibility:hidden;
-                        //       height:0px;
-                        //       overflow:hidden;
-                        //       margin-bottom: 0;
-                        //       @include medium {
-                          //         display:none;
-                          //         visibility:visible;
-                          //         height:auto;
-                          //         overflow:auto;
-                          //       }
-                          //     }
-                          
-                          
-                          // }
-                          //   }
-                          // }
