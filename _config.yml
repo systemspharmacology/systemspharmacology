@@ -33,4 +33,7 @@ collections:
   tutorials:
     output: false  
     permalink: /:collection/:name
+  publications:
+    output: false  
+    permalink: /:collection/:name
   

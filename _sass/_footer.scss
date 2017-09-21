@@ -55,7 +55,6 @@
       
       &.icon-twitter a,
       &.icon-github a {
-        background-image: url(/img/icon-twitter.svg);
         background-repeat: no-repeat;
         background-size: 22px;
         background-position: center;
@@ -78,6 +77,7 @@
       }
       
       &.icon-twitter a {
+        background-image: url(/img/icon-twitter.svg);
         @include small {
           margin-left: 24px;
         }
