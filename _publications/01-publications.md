@@ -1,7 +1,6 @@
 ---
-title:  Latest Publications (TODO)
+title:  Journal Publications
 description: > 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-github_url: Glucose-Insulin-Model 
+  Growing list of scientific journal publications that relates to OSP or describes work with PK-Sim® or MoBi®. Add your own contributions and label them or others appropriately to further grow and structure this database.
+full_url: https://github.com/Open-Systems-Pharmacology/OSP-based-publications-and-content/issues?q=is%3Aopen+is%3Aissue+label%3AJournal 
 ---
