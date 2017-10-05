@@ -1,6 +1,10 @@
 ---
-title:  "Comparing building blocks and simulations in PK-Sim® and MoBi®"
-description: "Learn how to find differences between a template building block and a building block used in a simulation, or between two simulations." 
+title:  "Comparing simulations and building blocks in PK-Sim® and MoBi®"
+description: >
+  This tutorial presents how to compare two simulations of the same molecule with
+  respect to their input parameter values and quickly determine differences. Also learn how to
+  determine which simulation parameter values may differ from the original building block used
+  to create the simulation.
 full_url: "http://www.systems-biology.com/uploads/pics/Comparison_01.mp4"
 icon: film  
 ---
