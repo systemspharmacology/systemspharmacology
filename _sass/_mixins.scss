@@ -143,10 +143,10 @@
 
 @mixin section_area_outer($imageName){
   background:url(../img/#{$imageName}.png) no-repeat right bottom;
-  background-size: 900px;
+  background-size: 800px;
   
   @media only screen and (min-width: 1201px) and (max-width: 1366px) {
-    background-size: 800px;  
+    background-size: 700px;  
   };
   
 
